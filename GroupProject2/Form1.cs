@@ -28,13 +28,4 @@ public partial class Form1 : Form {
         if (!System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\d+"))
             e.Handled = true;
     }
-
-    private void textBoxResult_KeyPress(object sender, KeyPressEventArgs e) {
-        if (e.KeyChar == (char)Keys.Back)
-            return;
-        else if (e.KeyChar == '.' && !textBoxResult.Text.Contains('.'))
-            return;
-        else if (!System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\d+"))
-            e.Handled = true;
-    }
 }

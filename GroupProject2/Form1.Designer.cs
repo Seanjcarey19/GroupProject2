@@ -100,9 +100,11 @@ partial class Form1 {
         numericUpDownFeet.Location = new System.Drawing.Point(152, 295);
         numericUpDownFeet.Margin = new System.Windows.Forms.Padding(2);
         numericUpDownFeet.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
+        numericUpDownFeet.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
         numericUpDownFeet.Name = "numericUpDownFeet";
         numericUpDownFeet.Size = new System.Drawing.Size(116, 35);
         numericUpDownFeet.TabIndex = 6;
+        numericUpDownFeet.Value = new decimal(new int[] { 1, 0, 0, 0 });
         // 
         // numericUpDownInches
         // 
@@ -127,9 +129,9 @@ partial class Form1 {
         textBoxResult.Location = new System.Drawing.Point(110, 501);
         textBoxResult.Margin = new System.Windows.Forms.Padding(2);
         textBoxResult.Name = "textBoxResult";
+        textBoxResult.ReadOnly = true;
         textBoxResult.Size = new System.Drawing.Size(695, 35);
         textBoxResult.TabIndex = 9;
-        textBoxResult.KeyPress += textBoxResult_KeyPress;
         // 
         // buttonCalculate
         // 
