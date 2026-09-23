@@ -24,118 +24,119 @@ partial class Form1 {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent()
-    {
-        labelTitle = new Label();
-        labelHeight = new Label();
-        labelFeet = new Label();
-        labelInches = new Label();
-        labelWeightPrompt = new Label();
-        labelOutput = new Label();
-        textBoxFeet = new TextBox();
-        textBoxInches = new TextBox();
-        textBoxWeight = new TextBox();
-        textBoxResult = new TextBox();
-        buttonCalculate = new Button();
+    private void InitializeComponent() {
+        labelTitle = new System.Windows.Forms.Label();
+        labelHeight = new System.Windows.Forms.Label();
+        labelFeet = new System.Windows.Forms.Label();
+        labelInches = new System.Windows.Forms.Label();
+        labelWeightPrompt = new System.Windows.Forms.Label();
+        labelOutput = new System.Windows.Forms.Label();
+        numericUpDownFeet = new System.Windows.Forms.NumericUpDown();
+        numericUpDownInches = new System.Windows.Forms.NumericUpDown();
+        textBoxWeight = new System.Windows.Forms.TextBox();
+        textBoxResult = new System.Windows.Forms.TextBox();
+        buttonCalculate = new System.Windows.Forms.Button();
+        ((System.ComponentModel.ISupportInitialize)numericUpDownFeet).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)numericUpDownInches).BeginInit();
         SuspendLayout();
         // 
         // labelTitle
         // 
-        labelTitle.Font = new Font("Segoe UI", 20F);
-        labelTitle.Location = new Point(152, 9);
-        labelTitle.Margin = new Padding(2, 0, 2, 0);
+        labelTitle.Font = new System.Drawing.Font("Segoe UI", 20F);
+        labelTitle.Location = new System.Drawing.Point(325, 9);
+        labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelTitle.Name = "labelTitle";
-        labelTitle.Size = new Size(275, 59);
+        labelTitle.Size = new System.Drawing.Size(275, 59);
         labelTitle.TabIndex = 0;
         labelTitle.Text = "BMI Calculator";
         // 
         // labelHeight
         // 
-        labelHeight.Location = new Point(168, 57);
-        labelHeight.Margin = new Padding(2, 0, 2, 0);
+        labelHeight.Location = new System.Drawing.Point(244, 189);
+        labelHeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelHeight.Name = "labelHeight";
-        labelHeight.Size = new Size(68, 20);
+        labelHeight.Size = new System.Drawing.Size(87, 49);
         labelHeight.TabIndex = 1;
         labelHeight.Text = "Height";
         // 
         // labelFeet
         // 
-        labelFeet.Location = new Point(168, 84);
-        labelFeet.Margin = new Padding(2, 0, 2, 0);
+        labelFeet.Location = new System.Drawing.Point(152, 245);
+        labelFeet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelFeet.Name = "labelFeet";
-        labelFeet.Size = new Size(68, 26);
+        labelFeet.Size = new System.Drawing.Size(68, 37);
         labelFeet.TabIndex = 2;
         labelFeet.Text = "Feet:";
         // 
         // labelInches
         // 
-        labelInches.Location = new Point(167, 141);
-        labelInches.Margin = new Padding(2, 0, 2, 0);
+        labelInches.Location = new System.Drawing.Point(332, 251);
+        labelInches.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelInches.Name = "labelInches";
-        labelInches.Size = new Size(69, 28);
+        labelInches.Size = new System.Drawing.Size(78, 31);
         labelInches.TabIndex = 3;
         labelInches.Text = "Inches:";
         // 
         // labelWeightPrompt
         // 
-        labelWeightPrompt.Location = new Point(295, 60);
-        labelWeightPrompt.Margin = new Padding(2, 0, 2, 0);
+        labelWeightPrompt.Location = new System.Drawing.Point(513, 251);
+        labelWeightPrompt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelWeightPrompt.Name = "labelWeightPrompt";
-        labelWeightPrompt.Size = new Size(93, 29);
+        labelWeightPrompt.Size = new System.Drawing.Size(132, 41);
         labelWeightPrompt.TabIndex = 4;
         labelWeightPrompt.Text = "Weight(lbs):";
         // 
         // labelOutput
         // 
-        labelOutput.Location = new Point(219, 277);
-        labelOutput.Margin = new Padding(2, 0, 2, 0);
+        labelOutput.Location = new System.Drawing.Point(401, 458);
+        labelOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelOutput.Name = "labelOutput";
-        labelOutput.Size = new Size(67, 27);
+        labelOutput.Size = new System.Drawing.Size(67, 27);
         labelOutput.TabIndex = 5;
         labelOutput.Text = "BMI:";
         // 
-        // textBoxFeet
+        // numericUpDownFeet
         // 
-        textBoxFeet.Location = new Point(168, 112);
-        textBoxFeet.Margin = new Padding(2);
-        textBoxFeet.Name = "textBoxFeet";
-        textBoxFeet.Size = new Size(68, 27);
-        textBoxFeet.TabIndex = 6;
-        textBoxFeet.KeyPress += textBoxFeet_KeyPress;
+        numericUpDownFeet.Location = new System.Drawing.Point(152, 295);
+        numericUpDownFeet.Margin = new System.Windows.Forms.Padding(2);
+        numericUpDownFeet.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
+        numericUpDownFeet.Name = "numericUpDownFeet";
+        numericUpDownFeet.Size = new System.Drawing.Size(116, 35);
+        numericUpDownFeet.TabIndex = 6;
         // 
-        // textBoxInches
+        // numericUpDownInches
         // 
-        textBoxInches.Location = new Point(167, 171);
-        textBoxInches.Margin = new Padding(2);
-        textBoxInches.Name = "textBoxInches";
-        textBoxInches.Size = new Size(68, 27);
-        textBoxInches.TabIndex = 7;
-        textBoxInches.KeyPress += textBoxInches_KeyPress;
+        numericUpDownInches.Location = new System.Drawing.Point(332, 294);
+        numericUpDownInches.Margin = new System.Windows.Forms.Padding(2);
+        numericUpDownInches.Maximum = new decimal(new int[] { 12, 0, 0, 0 });
+        numericUpDownInches.Name = "numericUpDownInches";
+        numericUpDownInches.Size = new System.Drawing.Size(116, 35);
+        numericUpDownInches.TabIndex = 7;
         // 
         // textBoxWeight
         // 
-        textBoxWeight.Location = new Point(295, 91);
-        textBoxWeight.Margin = new Padding(2);
+        textBoxWeight.Location = new System.Drawing.Point(532, 294);
+        textBoxWeight.Margin = new System.Windows.Forms.Padding(2);
         textBoxWeight.Name = "textBoxWeight";
-        textBoxWeight.Size = new Size(68, 27);
+        textBoxWeight.Size = new System.Drawing.Size(68, 35);
         textBoxWeight.TabIndex = 8;
         textBoxWeight.KeyPress += textBoxWeight_KeyPress;
         // 
         // textBoxResult
         // 
-        textBoxResult.Location = new Point(218, 306);
-        textBoxResult.Margin = new Padding(2);
+        textBoxResult.Location = new System.Drawing.Point(110, 501);
+        textBoxResult.Margin = new System.Windows.Forms.Padding(2);
         textBoxResult.Name = "textBoxResult";
-        textBoxResult.Size = new Size(68, 27);
+        textBoxResult.Size = new System.Drawing.Size(695, 35);
         textBoxResult.TabIndex = 9;
         textBoxResult.KeyPress += textBoxResult_KeyPress;
         // 
         // buttonCalculate
         // 
-        buttonCalculate.Location = new Point(184, 231);
-        buttonCalculate.Margin = new Padding(2);
+        buttonCalculate.Location = new System.Drawing.Point(364, 386);
+        buttonCalculate.Margin = new System.Windows.Forms.Padding(2);
         buttonCalculate.Name = "buttonCalculate";
-        buttonCalculate.Size = new Size(139, 44);
+        buttonCalculate.Size = new System.Drawing.Size(139, 44);
         buttonCalculate.TabIndex = 10;
         buttonCalculate.Text = "Convert";
         buttonCalculate.UseVisualStyleBackColor = true;
@@ -143,23 +144,24 @@ partial class Form1 {
         // 
         // Form1
         // 
-        AutoScaleDimensions = new SizeF(8F, 20F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(533, 433);
+        AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        ClientSize = new System.Drawing.Size(935, 655);
         Controls.Add(buttonCalculate);
         Controls.Add(textBoxResult);
         Controls.Add(textBoxWeight);
-        Controls.Add(textBoxInches);
-        Controls.Add(textBoxFeet);
+        Controls.Add(numericUpDownInches);
+        Controls.Add(numericUpDownFeet);
         Controls.Add(labelOutput);
         Controls.Add(labelWeightPrompt);
         Controls.Add(labelInches);
         Controls.Add(labelFeet);
         Controls.Add(labelHeight);
         Controls.Add(labelTitle);
-        Margin = new Padding(2);
-        Name = "Form1";
+        Margin = new System.Windows.Forms.Padding(2);
         Text = "Form1";
+        ((System.ComponentModel.ISupportInitialize)numericUpDownFeet).EndInit();
+        ((System.ComponentModel.ISupportInitialize)numericUpDownInches).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -173,8 +175,8 @@ partial class Form1 {
     private System.Windows.Forms.Label labelWeightPrompt;
     private System.Windows.Forms.Label labelOutput;
 
-    private System.Windows.Forms.TextBox textBoxFeet;
-    private System.Windows.Forms.TextBox textBoxInches;
+    private System.Windows.Forms.NumericUpDown numericUpDownFeet;
+    private System.Windows.Forms.NumericUpDown numericUpDownInches;
     private System.Windows.Forms.TextBox textBoxWeight;
     private System.Windows.Forms.TextBox textBoxResult;
 
