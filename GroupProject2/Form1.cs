@@ -47,4 +47,12 @@ public partial class Form1 : Form {
         if (!System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"\d+"))
             e.Handled = true;
     }
+
+    private void labelTitle_Click(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
+
+    private void labelWeightPrompt_Click(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
 }

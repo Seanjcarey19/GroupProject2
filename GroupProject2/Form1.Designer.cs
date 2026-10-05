@@ -44,12 +44,14 @@ partial class Form1 {
         // labelTitle
         // 
         labelTitle.Font = new System.Drawing.Font("Segoe UI", 20F);
-        labelTitle.Location = new System.Drawing.Point(325, 9);
+        labelTitle.Location = new System.Drawing.Point(262, 29);
         labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelTitle.Name = "labelTitle";
-        labelTitle.Size = new System.Drawing.Size(275, 59);
+        labelTitle.Size = new System.Drawing.Size(423, 59);
         labelTitle.TabIndex = 0;
         labelTitle.Text = "BMI Calculator";
+        labelTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+        labelTitle.Click += labelTitle_Click;
         // 
         // labelHeight
         // 
@@ -71,7 +73,7 @@ partial class Form1 {
         // 
         // labelInches
         // 
-        labelInches.Location = new System.Drawing.Point(332, 251);
+        labelInches.Location = new System.Drawing.Point(332, 245);
         labelInches.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelInches.Name = "labelInches";
         labelInches.Size = new System.Drawing.Size(78, 31);
@@ -80,12 +82,13 @@ partial class Form1 {
         // 
         // labelWeightPrompt
         // 
-        labelWeightPrompt.Location = new System.Drawing.Point(513, 251);
+        labelWeightPrompt.Location = new System.Drawing.Point(503, 245);
         labelWeightPrompt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
         labelWeightPrompt.Name = "labelWeightPrompt";
         labelWeightPrompt.Size = new System.Drawing.Size(132, 41);
         labelWeightPrompt.TabIndex = 4;
         labelWeightPrompt.Text = "Weight(lbs):";
+        labelWeightPrompt.Click += labelWeightPrompt_Click;
         // 
         // labelOutput
         // 
@@ -133,6 +136,7 @@ partial class Form1 {
         textBoxResult.ReadOnly = true;
         textBoxResult.Size = new System.Drawing.Size(695, 35);
         textBoxResult.TabIndex = 9;
+        textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         // 
         // txtCategory
         // 
@@ -142,6 +146,7 @@ partial class Form1 {
         txtCategory.ReadOnly = true;
         txtCategory.Size = new System.Drawing.Size(695, 35);
         txtCategory.TabIndex = 10;
+        txtCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         // 
         // buttonCalculate
         // 
@@ -158,6 +163,7 @@ partial class Form1 {
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        BackColor = System.Drawing.Color.LightGreen;
         ClientSize = new System.Drawing.Size(935, 655);
         Controls.Add(buttonCalculate);
         Controls.Add(txtCategory);
