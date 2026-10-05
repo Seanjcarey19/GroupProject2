@@ -9,7 +9,7 @@ partial class Form1 {
     /// <summary>
     ///  Clean up any resources being used.
     /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    /// <param name=\"disposing\">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing) {
         if (disposing && (components != null)) {
             components.Dispose();
@@ -35,6 +35,7 @@ partial class Form1 {
         numericUpDownInches = new System.Windows.Forms.NumericUpDown();
         textBoxWeight = new System.Windows.Forms.TextBox();
         textBoxResult = new System.Windows.Forms.TextBox();
+        txtCategory = new System.Windows.Forms.TextBox();
         buttonCalculate = new System.Windows.Forms.Button();
         ((System.ComponentModel.ISupportInitialize)numericUpDownFeet).BeginInit();
         ((System.ComponentModel.ISupportInitialize)numericUpDownInches).BeginInit();
@@ -133,13 +134,22 @@ partial class Form1 {
         textBoxResult.Size = new System.Drawing.Size(695, 35);
         textBoxResult.TabIndex = 9;
         // 
+        // txtCategory
+        // 
+        txtCategory.Location = new System.Drawing.Point(110, 555);
+        txtCategory.Margin = new System.Windows.Forms.Padding(2);
+        txtCategory.Name = "txtCategory";
+        txtCategory.ReadOnly = true;
+        txtCategory.Size = new System.Drawing.Size(695, 35);
+        txtCategory.TabIndex = 10;
+        // 
         // buttonCalculate
         // 
         buttonCalculate.Location = new System.Drawing.Point(364, 386);
         buttonCalculate.Margin = new System.Windows.Forms.Padding(2);
         buttonCalculate.Name = "buttonCalculate";
         buttonCalculate.Size = new System.Drawing.Size(139, 44);
-        buttonCalculate.TabIndex = 10;
+        buttonCalculate.TabIndex = 11;
         buttonCalculate.Text = "Convert";
         buttonCalculate.UseVisualStyleBackColor = true;
         buttonCalculate.Click += buttonCalculate_Click;
@@ -150,6 +160,7 @@ partial class Form1 {
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(935, 655);
         Controls.Add(buttonCalculate);
+        Controls.Add(txtCategory);
         Controls.Add(textBoxResult);
         Controls.Add(textBoxWeight);
         Controls.Add(numericUpDownInches);
@@ -181,6 +192,7 @@ partial class Form1 {
     private System.Windows.Forms.NumericUpDown numericUpDownInches;
     private System.Windows.Forms.TextBox textBoxWeight;
     private System.Windows.Forms.TextBox textBoxResult;
+    private System.Windows.Forms.TextBox txtCategory;
 
     #endregion
 }
